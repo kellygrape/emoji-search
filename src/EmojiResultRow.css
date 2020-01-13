@@ -5,10 +5,14 @@
   position: relative;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   cursor: pointer;
-}
-
-.component-emoji-result-row:hover {
-  background-color: #eee;
+  flex-basis: 150px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    margin: 3px 15px;
+    background-color: white;
+    border-radius: 3px;
 }
 
 .component-emoji-result-row img {

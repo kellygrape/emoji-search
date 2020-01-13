@@ -5,20 +5,18 @@ import "./EmojiResultRow.css";
 export default class EmojiResultsRow extends PureComponent {
   static propTypes = {
     title: PropTypes.string,
-    symbol: PropTypes.string
+    image: PropTypes.string
   };
 
   render() {
-    const codePointHex = this.props.symbol.codePointAt(0).toString(16);
-    const src = `//cdn.jsdelivr.net/emojione/assets/png/${codePointHex}.png`;
+    const src = `images/${this.props.image}`;
     return (
       <div
         className="component-emoji-result-row copy-to-clipboard"
-        data-clipboard-text={this.props.symbol}
+        data-clipboard-text={this.props.title}
       >
         <img alt={this.props.title} src={src} />
         <span className="title">{this.props.title}</span>
-        <span className="info">Click to copy emoji</span>
       </div>
     );
   }

@@ -1,0 +1,6 @@
+.component-emoji-results {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
